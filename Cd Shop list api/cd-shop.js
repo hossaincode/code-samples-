@@ -71,7 +71,7 @@ class UI{
              
             
            
-            UI.showAlert('Book Deleted','danger');
+            UI.showAlert('CD Deleted','danger');
              
          }
 
