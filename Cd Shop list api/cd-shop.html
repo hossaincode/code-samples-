@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="cd-shop.css">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/3/yeti/bootstrap.min.css">
+
+    <title>MY CD SHOP</title>
+</head>
+<body>
+     <div class="container mt-4">
+                <h1>
+                    <a href="//www.facebook.com"><img id="icon" src="//static.facebook.com/images/logos/facebook_2x.png"></a>
+                </h1>
+
+            <h1 class="display 4 text-center">
+                    <i class="fas fa-compact-disc" style="color:gold"></i>    My <span class="text-primary"> CD </span> Shop
+            </h1>
+            
+            <form  id="cd-shop1">
+                <div class="form-group">
+                    <label for="title" > Title(unique)</label>
+                    <input type="text" name="title" id="title" class="form-control">
+                </div>
+                <div class="form-group">
+                        <label for="artist" > Artist </label>
+                        <input type="text" name="artist" id="artist" class="form-control">
+                </div>
+                <div class="form-group">
+                        <label for="title" > Type </label>
+                        <input type="text" name="type" id="type" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="genre" > Genre </label>
+                    
+                    <select class="form-control" id="genre">
+                    <option>Jazz</option>
+                     <option>Classical</option>
+                         <option>Country</option>
+                        <option>Heavy Metal </option>
+                    </select>
+                 </div>
+                 <input type="submit"  value="Add CD" class="btn btn-primary btn-block">
+            </form>
+
+            <table class=" table table-stripped mt-5">
+
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Type</th>
+                        <th>Genre</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="cd-list">My CD List</tbody>
+
+            </table>
+
+     </div>   
+    
+    <script src="cd-shop.js"></script>
+</body>
+</html>
