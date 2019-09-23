@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-medium ">
+  <a class ="navbar-brand" >CD SHOP<i class="fas fa-compact-disc"></i>
+    </a>
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" >
+      <ul class="navbar-nav ">
+          <li class="nav-item  ">
+              <a class="nav-link" routerLink="Home" routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}"  >Home </a>
+
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" routerLink="AddCD" routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}"  >Add</a>
+        </li>
+          <li class="nav-item ">
+              <a class="nav-link" routerLink="about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  >About</a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" routerLink="privacy" routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}"  >Privacy</a>
+          </li>
+          
+          
+      </ul>
+    </div>
+</nav>
+<router-outlet></router-outlet>
+
