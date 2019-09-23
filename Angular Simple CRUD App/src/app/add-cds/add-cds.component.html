@@ -1,0 +1,35 @@
+
+<form #userForm="ngForm">
+    <div class="form-group">
+      
+        <input type="text" class="form-control" placeholder="Name" [(ngModel)]="connceService.selectedRecords.name" >
+    </div>
+    <div class="form-group">
+     
+        <input type="text" class="form-control" placeholder="Artist" [(ngModel)]="connceService.selectedRecords.Artist">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Genre" [(ngModel)]="connceService.selectedRecords.Gerne" >
+    </div>
+    <div class="form-group">
+        <input type="number" class="form-control" placeholder="Year" [(ngModel)]="connceService.selectedRecords.year">
+    </div>
+ 
+    
+  <div class="row">
+  <div class="col-md-8">
+    <button class="btn btn-success btn-block  btn-lg" (click)= SaveRecords(connceService.selectedRecords) >
+         <i class ="fa fa-save"></i>    SAVE
+
+    </button> 
+
+  </div>
+  <div class="col-md-4">
+    <button class="btn btn-warning btn-block  btn-lg" (click)= ClearAll() >
+        <i class="fa fa-retweet"></i>   ClearAll
+
+    </button> 
+
+  </div>
+</div>
+</form>

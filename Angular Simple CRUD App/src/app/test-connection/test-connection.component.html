@@ -1,0 +1,52 @@
+
+
+<h2 class ="text-center">CD to Browse</h2>
+<table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Artist</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Year</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor=" let record of allRecords ">
+            
+            <td>{{record.name}}</td>
+            <td>{{record.Artist}}</td>
+            <td>{{record.Gerne}}</td>
+            <td>{{record.year}}</td>
+            <td> <button class="btn btn-danger"  (click)=" deleteRecords(record.id)" >  <i class="fa fa-trash"></i> Delete </button> <button (click)="openModal('custom-modal-1')" (click)="edit(record)"  class="btn btn-warning"> <i class="fa fa-edit"></i> Edit </button> </td>
+           
+            
+          </tr>
+          
+        </tbody>
+      </table>
+
+    <jw-modal id="custom-modal-1">
+
+            <div class="form-group">
+              
+                <input type="text" class="form-control" placeholder="Name" [(ngModel)]="testconnectService.selectedRecords.name"  >
+            </div>
+            <div class="form-group">
+             
+                <input type="text" class="form-control" placeholder="Artist"[(ngModel)]="testconnectService.selectedRecords.Artist"  >
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Genre" [(ngModel)]="testconnectService.selectedRecords.Gerne" >
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" placeholder="Year"[(ngModel)]="testconnectService.selectedRecords.year"  >
+            </div>
+            
+         
+        
+        <button (click)="closeModal('custom-modal-1'); Update(testconnectService.selectedRecords)">Update</button>
+
+    </jw-modal>
+    
+    <a class="btn btn-primary" routerLink="/AddCD" routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}"> <i class="fa fa-plus"> </i>Add</a>
