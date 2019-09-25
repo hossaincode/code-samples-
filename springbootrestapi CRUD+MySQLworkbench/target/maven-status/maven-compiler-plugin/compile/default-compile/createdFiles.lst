@@ -1,0 +1,5 @@
+com/springbootCRUD/springbootrestapi/CrudPortFolio.class
+com/springbootCRUD/springbootrestapi/repository/RecordRepository.class
+com/springbootCRUD/springbootrestapi/controller/RecordController.class
+com/springbootCRUD/springbootrestapi/DAO/RecordDAO.class
+com/springbootCRUD/springbootrestapi/model/Record.class
