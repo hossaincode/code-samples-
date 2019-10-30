@@ -22,7 +22,7 @@ mysqlConnection= mysql.createConnection(
     {
         host:'localhost',
         user:'root',
-        password:'2019A2mssppssm2A#',
+        password:',
         database:'ImageTesting'
 
     }
