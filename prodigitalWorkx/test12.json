@@ -1,0 +1,22 @@
+[
+ {
+  "name": "def",
+  "Age": 34,
+  "favorite_color": "Yellow"
+ },
+ {
+  "name": "buiop",
+  "Age": 74,
+  "favorite_color": "grey"
+ },
+ {
+  "name": "bui",
+  "Age": 74,
+  "favorite_color": "grey"
+ },
+ {
+  "name": "abc",
+  "Age": 25,
+  "favorite_color": "Black"
+ }
+]
